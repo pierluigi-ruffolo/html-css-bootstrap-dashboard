@@ -3,3 +3,15 @@
 .search-input::placeholder {
   color: gray;
 }
+/* Main */
+.rp-title {
+  width: 50%;
+}
+
+.rp-state {
+  width: 30%;
+}
+
+.rp-action {
+  width: 20%;
+}
