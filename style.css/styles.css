@@ -1,5 +1,7 @@
 /* header */
-
+.img-logo {
+  width: 40px;
+}
 .search-input::placeholder {
   color: gray;
 }
