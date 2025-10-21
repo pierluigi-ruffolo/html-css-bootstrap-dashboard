@@ -4,18 +4,19 @@
   color: gray;
 }
 /* Main */
-.rp-title {
-  width: 50%;
-}
 
-.rp-state {
+.rp-title {
+  width: 40%;
+}
+.rp-date {
   width: 30%;
 }
-
-.rp-action {
-  width: 20%;
+.rp-state {
+  width: 15%;
 }
-
+.text-center {
+  width: 15%;
+}
 .internal-card {
   width: 100%;
 }
