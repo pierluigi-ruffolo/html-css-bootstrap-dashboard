@@ -1,0 +1,5 @@
+/* header */
+
+.search-input::placeholder {
+  color: gray;
+}
