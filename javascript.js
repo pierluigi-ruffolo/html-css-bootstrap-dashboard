@@ -25,7 +25,11 @@ authorSurname.addEventListener("blur", function () {
 });
 
 publication.addEventListener("blur", function () {
-  if (isNaN(publication.value) || publication.value.length === 0) {
+  if (
+    isNaN(publication.value) ||
+    publication.value < 1500 ||
+    publication.value > 2025
+  ) {
     publication.classList.remove("is-valid");
     publication.classList.add("is-invalid");
   } else {
