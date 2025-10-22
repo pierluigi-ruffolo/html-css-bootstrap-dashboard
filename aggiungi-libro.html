@@ -75,6 +75,8 @@
                   aria-describedby="emailHelp"
                   placeholder="Inserisci il nome dell'autore"
                   required
+                  minlength="2"
+                  maxlength="40"
                 />
               </div>
             </div>
@@ -91,6 +93,8 @@
                   aria-describedby="emailHelp"
                   placeholder="Inserisci il cognome dell'autore"
                   required
+                  minlength="2"
+                  maxlength="40"
                 />
               </div>
             </div>
@@ -106,6 +110,8 @@
               aria-describedby="emailHelp"
               placeholder="Inserisci il titolo del libro"
               required
+              minlength="2"
+              maxlength="100"
             />
             <div class="form-text px-1">Titolo versione italiana</div>
           </div>
@@ -122,8 +128,9 @@
                   id="select-gender"
                   class="form-select"
                   aria-label="Default select example"
+                  required
                 >
-                  <option selected>Scegli il genere</option>
+                  <option disabled selected>Scegli il genere</option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
                   <option value="3">Three</option>
@@ -145,6 +152,8 @@
                   aria-describedby="emailHelp"
                   placeholder="Inserisci l'anno"
                   required
+                  min="1500"
+                  max="2025"
                 />
               </div>
             </div>
@@ -159,21 +168,45 @@
                   id="isbn"
                   placeholder="Inserisci il codice ISBN#"
                   required
+                  minlength="10"
+                  maxlength="13"
                 />
               </div>
             </div>
             <!-- FINE COL ISBN -->
           </div>
           <!-- fine row con genere anno di pubblicazione e ISBN# -->
-          <hr class="mt-4" />
+          <hr class="mt-5" />
           <!-- inizio div con note -->
-          <div class="mt-4">Note</div>
+          <div class="mt-4">
+            <label for="note" class="form-label fs-5">Note</label>
+            <textarea
+              class="form-control"
+              id="note"
+              rows="3"
+              placeholder="Inserisci eventuali note sul libro"
+              maxlength="500"
+              minlength="5"
+            ></textarea>
+          </div>
           <!-- fine div con note -->
           <!-- inizio div con input checkbox -->
-          <div class="mt-4">checkbox</div>
+          <div class="mt-4 form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="digital"
+              id="check-digital"
+            />
+            <label class="form-check-label" for="check-digital"
+              >Disponibile anche in digitale
+            </label>
+          </div>
           <!-- fine div con input checkbox -->
           <!--  inizio div button con submit  -->
-          <div class="mt-4">Bottone</div>
+          <div class="mt-4 mb-4">
+            <button class="btn btn-primary">Aggiungi Libro</button>
+          </div>
           <!-- fine div button con submit  -->
         </form>
       </div>
