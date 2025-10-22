@@ -57,7 +57,7 @@
     </header>
     <main class="pt-4">
       <!-- div container -->
-      <div class="container">
+      <div class="container-md">
         <h1 class="fs-2">Nuovo Libro</h1>
         <form action="">
           <!-- Prima riga  row con nome autore e cognome autore -->
@@ -65,13 +65,13 @@
             <div class="col-6">
               <!-- Nome autore -->
               <div>
-                <label for="exampleInputEmail1" class="form-label fs-5"
+                <label for="author-name" class="form-label fs-5"
                   >Nome autore</label
                 >
                 <input
                   type="text"
                   class="form-control"
-                  id="exampleInputEmail1"
+                  id="author-name"
                   aria-describedby="emailHelp"
                   placeholder="Inserisci il nome dell'autore"
                   required
@@ -81,13 +81,13 @@
             <!-- fine nome autore -->
             <div class="col-6">
               <div>
-                <label for="exampleInputEmail1" class="form-label fs-5"
+                <label for="author-surname" class="form-label fs-5"
                   >Cognome autore</label
                 >
                 <input
                   type="text"
                   class="form-control"
-                  id="exampleInputEmail1"
+                  id="author-surname"
                   aria-describedby="emailHelp"
                   placeholder="Inserisci il cognome dell'autore"
                   required
@@ -98,13 +98,11 @@
           <!-- Fine prima riga row con nome autore e cognome autore -->
           <!-- inizio div titolo -->
           <div class="mt-4">
-            <label for="exampleInputEmail1" class="form-label fs-5"
-              >Titolo</label
-            >
+            <label for="title" class="form-label fs-5">Titolo</label>
             <input
               type="text"
               class="form-control"
-              id="exampleInputEmail1"
+              id="title"
               aria-describedby="emailHelp"
               placeholder="Inserisci il titolo del libro"
               required
@@ -114,11 +112,57 @@
           <!-- fine div titolo -->
           <!-- inizio row con genere anno di pubblicazione e ISBN# -->
           <div class="row mt-2">
-            <div class="col-12 col-lg-4 mt-3"><div>genere</div></div>
+            <!-- inizio col genere -->
             <div class="col-12 col-lg-4 mt-3">
-              <div>Anno di pubblicazione</div>
+              <div>
+                <label for="select-gender" class="form-label fs-5"
+                  >Genere</label
+                >
+                <select
+                  id="select-gender"
+                  class="form-select"
+                  aria-label="Default select example"
+                >
+                  <option selected>Scegli il genere</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
             </div>
-            <div class="col-12 col-lg-4 mt-3"><div>ISBN#</div></div>
+            <!-- fine col genere -->
+
+            <!-- inizio col anno di pubblicazione -->
+            <div class="col-12 col-lg-4 mt-3">
+              <div>
+                <label for="publication" class="form-label fs-5"
+                  >Anno di pubblicazione</label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  id="publication"
+                  aria-describedby="emailHelp"
+                  placeholder="Inserisci l'anno"
+                  required
+                />
+              </div>
+            </div>
+            <!-- fine col anno di pubblicazione -->
+            <!-- inizio col ISBN -->
+            <div class="col-12 col-lg-4 mt-3">
+              <div>
+                <label for="isbn" class="form-label fs-5">ISBN#</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="isbn"
+                  placeholder="Inserisci il codice ISBN#"
+                  required
+                />
+              </div>
+            </div>
+            <!-- FINE COL ISBN -->
           </div>
           <!-- fine row con genere anno di pubblicazione e ISBN# -->
           <hr class="mt-4" />
